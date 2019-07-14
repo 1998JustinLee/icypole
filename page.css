@@ -1,0 +1,388 @@
+body {
+  background-color: #cbb7ff;
+  margin: 0px;
+  overflow: hidden;
+}
+
+/*-------- Buttons/Sliders --------*/
+
+#buttonsDiv {
+  position: absolute;
+  bottom: 0px;
+  right: 170px;
+  margin: 0px 20px
+}
+
+#stagReset,
+#snowReset {
+  z-index: 999;
+  position: absolute;
+  font-family: Roboto;
+  background-color: white;
+  bottom: 0px;
+  padding: 8px;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: #3e3d3d;
+}
+
+#stagReset {
+  /* right: 170px; */
+  right: 0px
+}
+
+#snowReset {
+  /* right: 220px; */
+  right: 50px
+}
+
+#stagReset:hover,
+#snowReset:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+#sliderDiv {
+  position: absolute;
+  z-index: 999;
+  right: 0px;
+  bottom: 0px;
+  margin: 10px;
+  text-align: right;
+}
+
+.slider {
+  margin: auto;
+  height: 20px;
+  display: block;
+}
+
+.sliderText {
+  font-family: Roboto;
+  display: inline;
+  margin: 0px;
+}
+
+.sliderNum {
+  font-family: Roboto;
+  display: inline-block;
+  margin: 0px;
+}
+
+/*-------- Background --------*/
+
+#pole {
+  position: absolute;
+  background-color: #8a8a8a;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 20px 0, 20px 100%, 0 100%);
+}
+
+#stalagtites {
+  position: absolute;
+  left: 20px;
+  width: 100%;
+}
+
+.stalagtite {
+  position: absolute;
+  z-index: 30;
+}
+
+.stalagtite:hover {
+  cursor: pointer;
+}
+
+#snow {
+  margin-left: 20px;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+}
+
+.flake {
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  z-index: 30;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+}
+
+#text {
+  display: none;
+  position: absolute;
+  left: 210px;
+  top: 170px;
+  z-index: 30;
+  width: 50px;
+  background-color: white;
+  font-family: Roboto;
+  text-align: right;
+  padding: 10px;
+  transform-origin: 100% 100%;
+  border-radius: 10px 10px 0px 10px;
+}
+
+/*-------- Hats --------*/
+
+.hatButtons {
+  z-index: 999;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  padding-left: 9px;
+  padding-bottom: 5px;
+}
+
+.hatButtons img {
+  padding: 8px;
+  height: 30px;
+  width: 30px;
+}
+
+.hatButtons img:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+#beanie {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  left: 307px;
+  top: 165px;
+  height: 100px;
+}
+
+#cap {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  left: 273px;
+  top: 180px;
+  height: 70px;
+}
+
+#sunvisor {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  left: 265px;
+  top: 220px;
+  height: 30px;
+}
+
+#tophat {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  left: 305px;
+  top: 105px;
+  height: 140px;
+}
+
+#sombrero {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  left: 255px;
+  top: 160px;
+  height: 75px;
+}
+
+#chefhat {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  left: 282px;
+  top: 118px;
+  height: 110px;
+}
+
+#beanie:hover,
+#cap:hover,
+#sunvisor:hover,
+#tophat:hover,
+#sombrero:hover,
+#chefhat:hover {
+  cursor: grab;
+}
+
+/*-------- Glasses --------*/
+
+.glassesButtons {
+  z-index: 999;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  padding-left: 9px;
+  padding-bottom: 5px;
+}
+
+.glassesButtons img {
+  padding: 8px;
+  height: 30px;
+  width: 30px;
+}
+
+.glassesButtons img:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+#glasses {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  height: 43px;
+  left: 303px;
+  top: 238px;
+}
+
+#monocle {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  height: 160px;
+  left: 328px;
+  top: 235px;
+}
+
+#sunglasses {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  height: 43px;
+  left: 303px;
+  top: 238px;
+}
+
+#mask {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  height: 41px;
+  left: 306px;
+  top: 240px;
+}
+
+#glasses:hover,
+#monocle:hover,
+#sunglasses:hover,
+#mask:hover {
+  cursor: grab;
+}
+
+/*-------- Head --------*/
+
+#svgFace {
+  position: absolute;
+  z-index: 1;
+  left: 292px;
+  top: 194px;
+  height: 193px;
+  transform-origin: 0% 0%;
+}
+
+#tongue {
+  position: absolute;
+  z-index: 2;
+  background-color: #FFA9A9;
+  text-align: center;
+  transform-origin: 0% 0%;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(27px 320px, 345px 320px, 345px 335px, 27px 335px);
+}
+
+#pupil {
+  position: absolute;
+  background-color: black;
+  z-index: 3;
+  transform-origin: 0% 0%;
+  height: 100%;
+  width: 100%;
+  clip-path: circle(5px at 345px 260px);
+}
+
+#lid1,
+#lid2,
+#lid3,
+#lid4 {
+  position: absolute;
+  background-color: #ffe5b1;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+#lid1 {
+  clip-path: polygon(335px 268px, 370px 268px, 370px 280px, 335px 280px);
+}
+
+#lid2 {
+  clip-path: polygon(335px 262px, 370px 262px, 370px 280px, 335px 280px);
+}
+
+#lid3 {
+  clip-path: polygon(335px 240px, 370px 240px, 370px 262px, 335px 245px);
+}
+
+#lid4 {
+  clip-path: polygon(335px 240px, 370px 240px, 370px 280px, 335px 280px);
+}
+
+#tear {
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: #cbfffd;
+  clip-path: circle(5px at 367px 262px);
+}
+
+#svgFace:hover,
+#pupil:hover,
+#lid1:hover,
+#lid2:hover,
+#lid3:hover,
+#lid4:hover,
+#tear:hover{
+  cursor: grab;
+}
+
+/*-------- Static Tongue Parts --------*/
+
+#tp1,
+#tp2,
+#tp3 {
+  background-color: #FFA9A9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#tp1 {
+  clip-path: circle(7.5px at 27px 327px);
+}
+
+#tp2 {
+  clip-path: polygon(20px 327px, 34px 327px, 34px 350px, 20px 350px);
+}
+
+#tp3 {
+  clip-path: circle(7.5px at 27px 350px);
+}

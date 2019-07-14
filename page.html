@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page.css">
+  <title>icy pole</title>
+</head>
+
+<body>
+	<img id="svgFace" src="images/face.svg">
+	<div id="text">owie</div>
+	<div id="tongue"></div>
+	<div id="pupil"></div>
+
+	<div id="pole"></div>
+	<div id="tp1"></div>
+	<div id="tp2"></div>
+	<div id="tp3"></div>
+
+	<div id="lid1"></div>
+	<div id="lid2"></div>
+	<div id="lid3"></div>
+	<div id="lid4"></div>
+	<div id="tear"></div>
+
+	<img id="beanie" src="images/beanie.svg">
+	<img id="cap" src="images/cap.svg">
+	<img id="sunvisor" src="images/sunvisor.svg">
+	<img id="tophat" src="images/tophat.svg">
+	<img id="sombrero" src="images/sombrero.svg">
+	<img id="chefhat" src="images/chefhat.svg">
+
+	<img id="glasses" src="images/glasses.svg">
+	<img id="monocle" src="images/monocle.svg">
+	<img id="sunglasses" src="images/sunglasses.svg">
+	<img id="mask" src="images/mask.svg">
+
+	<div id="stalagtites"></div>
+	<div id="snow"></div>
+
+	<div class="glassesButtons">
+		<img src="images/glasses.svg" onclick="glassesF(1)">
+		<img src="images/monocle.svg" onclick="glassesF(2)">
+		<img src="images/sunglasses.svg" onclick="glassesF(3)">
+		<img src="images/mask.svg" onclick="glassesF(4)">
+	</div>
+
+	<div class="hatButtons">
+		<img src="images/beanie.svg" onclick="hat(1)">
+		<img src="images/cap.svg" onclick="hat(2)">
+		<img src="images/sunvisor.svg" onclick="hat(3)">
+		<img src="images/tophat.svg" onclick="hat(4)">
+		<img src="images/sombrero.svg" onclick="hat(5)">
+		<img src="images/chefhat.svg" onclick="hat(6)">
+	</div>
+
+	<div id="sliderDiv">
+		<div>
+			<p class="sliderText">Tongue: </p>
+			<p id="tongueSpeed" class="sliderNum">10</p>
+			<input class="slider" type="range" min="1" max="20" value="11" step="1" oninput="updateSlider(this.value, 'tongueSpeed')">
+		</div>
+
+		<div>
+			<p class="sliderText">Snow: </p>
+			<p id="snowSpeed" class="sliderNum">5</p>
+			<input class="slider" type="range" min="1" max="10" value="6" step="1" oninput="updateSlider(this.value, 'snowSpeed')" onchange="resetSpeed(this.value, 'snowSpeed')">
+		</div>
+
+		<div>
+			<p class="sliderText">Stalagtites: </p>
+			<p id="stagSpeed" class="sliderNum">10</p>
+			<input class="slider" type="range" min="1" max="20" value="11" step="1" oninput="updateSlider(this.value, 'stagSpeed')" onchange="resetSpeed(this.value, 'stagSpeed')">
+		</div>
+
+		<div>
+			<p class="sliderText">Wobble: </p>
+			<p id="stagWobbleSpeed" class="sliderNum">20</p>
+			<input class="slider" type="range" min="1" max="20" value="20" step="1" oninput="updateSlider(this.value, 'stagWobbleSpeed')">
+		</div>
+	</div>
+
+  <div id="buttonsDiv">
+    <button id="stagReset" onclick="initStags()">R</button>
+    <button id="snowReset" onclick="snowSwitch()">S</button>
+  </div>
+
+	<script src="page.js"></script>
+</body>
+</html>
